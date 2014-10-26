@@ -15,7 +15,6 @@ var Battery = function() {
 		self.status.level = self._battery.level;
 		self.status.chargingTime = self._battery.chargingTime;
 		self.status.dischargingTime = self._battery.dischargingTime;
-		console.log('handler');
 		self.handlers.forEach(function(handler) {
 			handler(self.status);
 		})
